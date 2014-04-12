@@ -1,0 +1,1 @@
+"use strict";angular.module("spotShotWebApp",["ngRoute"]).config(["$routeProvider",function(a){a.when("/",{templateUrl:"views/landing.html",controller:"LandingCtrl"}).otherwise({redirectTo:"/"})}]),angular.module("spotShotWebApp").controller("LandingCtrl",["$scope",function(){}]);
