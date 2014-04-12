@@ -8,7 +8,7 @@ app.use(cors());
 app.use(bodyParser());
 */
 
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/dist'));
 
 /*
 // Google Cloud Messaging API
