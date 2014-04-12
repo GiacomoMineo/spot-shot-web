@@ -1,0 +1,144 @@
+.section-landing {
+.jumbotron {
+  cursor: default;
+  background-color: $bg-dark;
+  padding: 150px 0;
+  margin-bottom: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: $text-3;
+  overflow: hidden;
+  -webkit-transition: padding 300ms ease;
+  -webkit-transition-delay: 0s;
+  -moz-transition: padding 300ms ease 0s;
+  -o-transition: padding 300ms ease 0s;
+  transition: padding 300ms ease 0s;
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: #fff;
+    font-size: 63px;
+    font-weight: 700;
+    small {
+      font-size: 40%;
+      display: block;
+      clear: both;
+    }
+  }
+  .lead {
+    color: $text-2;
+    font-weight: 300;
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  .soon {
+    padding: 24px 0;
+    font-size: 26px;
+    color: $text-2;
+    strong {
+      color: $color;
+    }
+  }
+  .links {
+    margin-bottom: 5px;
+  }
+  .version-text {
+    color: #fff;
+    font-weight: 300;
+    font-size: 10px;
+    opacity: 0.3;
+  }
+  .btn {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 20px 42px;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @include transition(all 0.2s ease);
+  }
+  .btn-sign-in {
+    border: none;
+    background: $color;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #E6E6E6;
+    opacity: 0.9;
+    &:hover {
+      color: #fff;
+      opacity: 1;
+      background-color: $color-effect;
+    }
+  }
+  .btn-register {
+    margin-left: 20px;
+    border: none;
+    background: transparent;
+    box-shadow: inset 0px 0px 0px 2px $color-dark;
+    color: $color-dark;
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px $color;
+      color: $color;
+    }
+  }
+}
+.links {
+  margin-bottom: 60px;
+  background-color: $bg-main;
+  border-top: 1px solid $bg-second;
+  border-bottom: 1px solid $bg-second;
+  $height: 54px;
+  label {
+    line-height: $height;
+    font-size: 21px;
+    font-weight: 300;
+    color: $text-3;
+    padding-right: 16px;
+    margin: 0;
+    vertical-align: middle;
+  }
+  #email {
+    height: $height;
+    line-height: $height;
+    vertical-align: middle;
+    padding: 2px 16px;
+    color: $color;
+    font-size: 30px;
+    font-weight: 300;
+    background-color: $bg-second;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: none;
+    &:focus {
+      border: 2px solid $color;
+    }
+  }
+}
+footer {
+  position: relative;
+  .copy,
+  .contact {
+    color: $text-4;
+  }
+  .contact a {
+    color: $color-extra-dark;
+    @include transition(color 0.3s ease);
+    &:hover {
+      color: $color;
+    }
+  }
+  .logo {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+}
